@@ -58,7 +58,7 @@ public class customer_db extends HttpServlet {
 			Statement stmt=con.createStatement(); 
 			String str1="INSERT INTO cust values('"+name+"','"+email+"',"+service+","+status+","+cid+","+n+")";
 			stmt.executeUpdate(str1);
-			System.out.println(str1);
+			//System.out.println(str1);
 			HttpSession session1 = request.getSession();
 			String d=session1.getId();
 			session1.setAttribute("rid",n);
